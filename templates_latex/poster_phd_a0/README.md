@@ -14,12 +14,12 @@ Use `xelatex sbposter.tex` to create the PDF. `xelatex` is necessary for handlin
 
 This is made for an english poster. A swedish logo is provided in /images.
 
-If you prefer a gray background, and the blocks on white, edit sbposter.cls and change \usebackgroundstyle{sb} to \usebackgroundstyle{sbgray}.
+If you prefer a gray background with the blocks on white, edit `sbposter.cls` and change `\usebackgroundstyle{sb}` to `\usebackgroundstyle{sbgray}`.
   
 For printed posters, replace `rgb` with `cmyk` in `sbposter.cls`, line `\PassOptionsToPackage{rgb}{xcolor}`.
 
 ## Fonts
-The Jost* otf font files must be placed in the same directory as the LaTeX source.
+The Jost* OTF font files must be placed in the same directory as the LaTeX source.
 
 ## Powerpoint
 The University of Gothenburg has a [PowerPoint template](https://gunet.sharepoint.com/sites/mp-stod-och-service/SitePages/Mallar(1).aspx) for an academic poster.

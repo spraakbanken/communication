@@ -26,7 +26,7 @@ We use [Jost*](https://indestructibletype.com/Jost). [Download Jost*](https://in
 
 For our logo we used the Light weight. The slogan is set in Medium weight.
 
-Licence for Jost*: SIL open font license
+License for Jost*: SIL open font license
 
 ## Colors
 Our main color is Orange. Our orange is defined as:
@@ -36,26 +36,25 @@ Our main color is Orange. Our orange is defined as:
 * PANTONE Orange 021 C
 
 The University of Gothenburgs uses its own blue color, defined as:
-PMS: 294 C, 2945 U
-CMYK: 100/75/15/0
-RGB: 0/75/137
-HTML: 004b89
-NCS: 4550-R90B
+* RGB: 0/75/137, hex: 004b89
+* CMYK: 100/75/15/0
+* PMS: 294 C, 2945 U
+* HTML: 004b89
+* NCS: 4550-R90B
 
-According to university policy, the use of decorative colors are
+According to university policy, the use of decorative colors are allowed.
+
 ## Office templates
-LibreOffice and Microsoft Office templates.
+LibreOffice and Microsoft Office templates:
+* Poster PhD A0
+* Presentation
 
 ## LaTeX templates
-
-### Student A0 poster for print
-Based on Arianna Masciolinis [poster](https://github.com/harisont/GUnofficial-poster-template).
-
-### Presentation
-Presentation template. Coming soon.
+LaTex templates:
+* Poster PhD A0
 
 ## Products
-Finished products produced using the Språkbanken Text identity.
+Finished products using the Språkbanken Text identity.
 
 ## Tools
 We used the following tools:
@@ -69,4 +68,4 @@ We used the following tools:
 All content is created using free open source tools.
 
 ## Contact
-This repository is primarily maintained by [Staffan Melin](mailto://staffan.melin@svenska.gu.se). Please contact him with any questions.
+This repository is primarily maintained by [Staffan Melin](mailto://staffan.melin@svenska.gu.se). Please contact him if you have any suggestions or questions.

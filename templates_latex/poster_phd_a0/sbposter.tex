@@ -1,0 +1,100 @@
+\documentclass{sbposter}
+\usepackage{graphicx}
+\usepackage[normalem]{ulem}
+\usepackage[inline]{enumitem}
+\setlist{noitemsep} 
+\usepackage{booktabs} % tables
+\usepackage{caption}
+
+% Debug
+% \font\nullfont=cmr10
+
+% tikzposter title information
+% For long title:
+\title{\parbox{0.6\linewidth}{Title of your paper - it can be long and break over several lines}}
+% For short title:
+%\title{Title of your paper}
+\author{First Author, Second Author and Possibly More}
+\institute{Språkbanken Text, University of Gothenburg}
+
+\begin{document}
+\maketitle
+
+% Introduction - full page width
+\block{Abstract}{
+    Abstract or introduction spanning the whole page, that is, not placed in the two columns.
+}
+
+% Two column format
+\begin{columns}
+\column{0.5}
+
+% Block - normal
+\block{A block}{
+
+    Each block can contain:
+
+    \begin{itemize}
+        \item text, with \textit{italic} and \textbf{bold} text
+        \item lists, like this one
+        \item tables (but put your \texttt{tabular}s inside \texttt{minipage}s, not \texttt{table}s!)
+        \item images, like the one in the block below
+    \end{itemize}
+}
+
+% Block - with an image
+\block{Another block with an image}{
+    \begin{center}
+        \includegraphics[width=0.25\textwidth]{images/sprakbanken_text_gu_en.pdf}
+%        \includegraphics[width=0.25\textwidth, natwidth=14cm,natheight=23.4cm]{images/sprakbanken_text_gu_en.svg}
+    \end{center}
+}
+
+% Block - with table
+\block{A third 1-column block with a tiny table}{
+    \begin{minipage}{\linewidth}
+        \centering
+        \resizebox{0.3\columnwidth}{!}{
+            \begin{tabular}{@{}ll@{}}
+                \toprule
+                Column 1 & Column 2 \\ \midrule
+                Cell 1A  & Cell 2A  \\
+                Cell 1B  & Cell 2B  \\
+            \end{tabular}
+        }
+        \captionof{table}{This is a caption}
+    \end{minipage}
+}
+
+% Next column
+\column{0.5}
+
+% Block - with sub blocks (consisting of a title and indented text)
+\block{A block with sub-blocks}{
+    Each block can contain however many inner blocks.
+
+    \innerblock{An inner block}{
+        This is the first inner block.
+    }
+
+    \innerblock{Another inner block}{
+        This is the second and last inner block.
+    }
+}
+
+% Block - without a title
+\block{}{
+    Blocks don't necessarily always have a title.
+}
+
+% Block - with an orange frame
+\begingroup
+\colorlet{framecolor}{sborange}
+\block{A block with an orange frame}{
+    This sticks out a little bit more.
+}
+\endgroup
+
+\end{columns}
+\end{document}
+

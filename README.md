@@ -44,10 +44,13 @@ The University of Gothenburgs uses its own blue color, defined as:
 
 According to university policy, the use of decorative colors are allowed.
 
-## Office templates
+## Office (GUI) templates
 LibreOffice and Microsoft Office templates:
 * Poster PhD A0
 * Presentation
+
+Scribus templates:
+* Poster PhD A0
 
 ## LaTeX templates
 LaTex templates:
@@ -57,12 +60,12 @@ LaTex templates:
 Finished products using the Språkbanken Text identity.
 
 ## Tools
-We used the following tools:
+The following tools were used in the creation of the profile and templates:
 
-* Inkscape (vector graphics)
-* Scribus (page layout)
-* GIMP (image editing)
-* Krita (paint)
+* [Inkscape](https://inkscape.org/) (vector graphics)
+* [Scribus](https://scribus.net) (page layout)
+* [GIMP](https://www.gimp.org/) (image editing)
+* [Krita](https://krita.org/en/) (digital painting)
 * LaTeX
 
 All content is created using free open source tools.

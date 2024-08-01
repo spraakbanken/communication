@@ -18,17 +18,9 @@ Useful main principles:
   * add our URL: spraakbanken.gu.se
 * Keep it simple - less is more
 
-## Logotypes
-The logotypes are created with Inkscape and provided in both SVG and PNG format. If you need something else, contact Staffan Melin (see Contact below).
+In the work with our templates we have tried to mimic, or at least been inspired by, existing templates from the University of Gothenburg.
 
-## Fonts
-We use [Jost*](https://indestructibletype.com/Jost). [Download Jost*](https://indestructibletype.com/BuyJost.html).
-
-For our logo we used the Light weight. The slogan is set in Medium weight.
-
-License for Jost*: SIL open font license
-
-## Colors
+### Colors
 Our main color is Orange. Our orange is defined as:
 
 * RGB: 240/88/26, hex: F0581A
@@ -44,20 +36,38 @@ The University of Gothenburgs uses its own blue color, defined as:
 
 According to university policy, the use of decorative colors are allowed.
 
-## Office (GUI) templates
+## Content
+
+### Fonts
+We use [Jost*](https://indestructibletype.com/Jost). [Download Jost*](https://indestructibletype.com/BuyJost.html).
+
+For our logo we used the Light weight. The slogan is set in Medium weight.
+
+License for Jost*: SIL open font license
+
+### Logotypes
+The logotypes are created with Inkscape and provided in both SVG and PNG format. If you need something else, contact Staffan Melin (see Contact below).
+
+### Products
+Finished products using the Språkbanken Text identity.
+
+### Profile
+Graphic profile/identity document for Språkbanken Text.
+
+### Symbols
+Some simple symbols from our projects.
+
+### Templates for LaTeX
+LaTex templates:
+* Poster PhD A0
+
+### Templates for Desktop applications 
 LibreOffice and Microsoft Office templates:
 * Poster PhD A0
 * Presentation
 
 Scribus templates:
 * Poster PhD A0
-
-## LaTeX templates
-LaTex templates:
-* Poster PhD A0
-
-## Products
-Finished products using the Språkbanken Text identity.
 
 ## Tools
 The following tools were used in the creation of the profile and templates:

@@ -1,0 +1,10 @@
+\frametitle{Show max slide numbers}
+For these slides, I used the option to
+  show the maximum number of slides. To activate it
+  one has to activate it with:
+  \begin{verbatim}
+    \usetheme[showmaxslides]{pureminimalistic}
+  \end{verbatim}
+  Usually, I prefer to not show the maximum number of
+  slides, as the people tend to lose focus if they know
+  the last few slides are shown.

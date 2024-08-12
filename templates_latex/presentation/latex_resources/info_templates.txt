@@ -1,0 +1,45 @@
+# LaTeX templates
+
+## Basics
+* TikZ - graphics in LaTex
+  * https://texdoc.org/serve/tikzposter.pdf/0
+* Beamer - create presentations
+* pdflatex - latex compiler
+
+### Beamer
+* https://www.overleaf.com/learn/latex/Beamer_Presentations%3A_A_Tutorial_for_Beginners_(Part_1)%E2%80%94Getting_Started
+> https://tex.stackexchange.com/questions/146529/design-a-custom-beamer-theme-from-scratch
+
+### Compile
+* pdflatex yourfilename.tex
+* xelatex yourfilename.tex
+
+### LaTeX help
+* https://www.baeldung.com/cs/category/latex
+* https://www.overleaf.com/learn/latex/Learn_LaTeX_in_30_minutes
+
+### Resources
+* https://www.baeldung.com/cs/latex-presentations
+
+### Tools
+* TexMaker, Linux + Win + Mac: https://www.xm1math.net/texmaker/
+
+## Install on Debian
+texlive-latex-base
+texlive-latex-extra
+texlive-latex-recommended
+texlive
+texlive-xetex
+
+texlive-bibtex-extra % biblatex
+
+## Use OTF fonts
+Change your invocations of pdflatex to xelatex.
+\usepackage{xltxtra} at the beginning of your preamble (some XeTeX goodies, in particular it also loads fontspec, which is needed for font selection).
+\setmainfont{Name of OTF font}
+or
+\usepackage{fontspec}
+\setmainfont{My OpenType Font}
+Jost fix:
+- https://github.com/latex3/fontspec/issues/437
+

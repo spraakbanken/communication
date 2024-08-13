@@ -1,0 +1,126 @@
+\documentclass[11pt,a4paper]{DL}
+\usepackage[hidelinks]{hyperref}
+\usepackage{numprint}
+\npthousandsep{,}
+\usepackage{multirow} % anforanden
+%\usepackage{paralist} % poligraph
+\usepackage{listingsutf8} %poligraph
+% the package above should be replaced with e.g. the minted library
+\usepackage{latexsym} %poligraph
+\usepackage{graphicx} %poligraph
+\usepackage{longtable}   % tables that can extend over a page
+\usepackage[section]{placeins} % to keep floats within sections
+\addbibresource{thesis.bib}
+
+
+\title{Because Democracy}
+\subtitle{Computationally Assessing Argumentation in Swedish Parliamentary Debates}
+
+\author{Stian Rødven-Eide}
+\pubyear{2025}
+\DLno{1337}
+\ISBN{123-45-6789-10-11}
+\begin{document}
+
+\maketitle
+\frontmatter
+
+\begin{abstract}
+    Argumentation has been studied since antiquity. Despite its long history and continued prevalence in human communication, computational methods for analysing and assessing argumentation are still limited. The reasons for this are manifold. Argumentation is among the most complex of human interactions, situated in the intersection between logic, rhetoric and pragmatics. This makes it hard even for human annotators to agree on what is argumentation or not. It is also highly domain specific. What is considered an argument in a domestic situation has little bearing in a court. Arguments in social media bear little resemblance to those put forward in parliament.
+    
+    The task of automatically identifying and classifying argumentation in text is commonly referred to as \emph{argumentation mining}. In contrast to many other NLP tasks, argumentation mining is usually defined as a series of subtasks; no single method can be expected to take you from training data to correctly classified text. Rather, depending on the concrete goal as well as the language domain, a number of interlinked processes are needed, something that makes every argumentation mining project, to a certain degree, unique.
+    
+    This thesis presents the story of applying argumentation mining techniques to Swedish parliamentary debates. Working on the assumptions that minimising noise in data is particularly crucial, and that the process can be significantly improved by linguistic annotation and additional knowledge, we detail in part two how we created a high quality dataset, augmented with detailed annotation and several knowledge graphs. We demonstrate the issues connected with using standard models for certain classification -- such as named entity recognition and anaphora resolution -- and thus the benefits of fine tuning models on our data.
+    
+    Part three describes our work on building a specialised argumentation mining pipeline for Swedish parliamentary debates. Here, we go through a number of different approaches, each bringing us a step closer to useful classification of argument components and the relations between them. We will investigate the following hypotheses:
+    \begin{itemize}
+        \item Due to the formal structure of parliamentary debates, a rule-based method for determining the central claim should work well, while minor claims and premises are better classified using statistical methods.
+        \item As a consequence of the complexity of argumentation in this domain, a common pairwise labelling for establishing the argumentative structure will be insufficient. Instead, we a method based on discourse parsing should yield better results.
+    \end{itemize}
+     
+    
+    First, however, we introduce the thesis work in more detail in part one, where we explain our reasoning behind this project, as well as a discussion of our challenges, our findings and some ideas for improvement.
+\end{abstract}
+
+\begin{sammanfattning}
+    Vi är alla sammanfattning.
+\end{sammanfattning}
+
+\begin{acknowledgements}
+    I would hereby like to thank everyone in the whole wide world.
+    
+\bigskip
+
+\rightline{Stian Rødven-Eide}
+
+\rightline{Gothenburg, April 19, 2025}
+\end{acknowledgements}
+
+\tableofcontents
+\mainmatter
+
+\part{Introduction and overview of the thesis work}	%separate page with only title
+\label{part:kappa}
+
+\chapter{Introduction}
+\label{introduction}
+\input{chapters/introduction.tex}
+
+\chapter{Background}
+\label{background}
+\input{chapters/background.tex}
+
+\chapter{Resources}
+\label{resources}
+\input{chapters/resources.tex}
+
+\chapter{Methods}
+\label{methods}
+\input{chapters/methods.tex}
+
+\chapter{Discussion}
+\label{discussion}
+\input{chapters/discussion.tex}
+
+\chapter{Conclusion}
+\label{conclusion}
+\input{chapters/conclusion.tex}
+
+\part{From text to propositions}
+
+\chapter{The politicians}
+\label{poligraph_paper}
+\input{papers/poligraph/poligraph}
+
+\chapter{The debates}
+\label{anforanden_paper}
+\input{papers/anforanden/anforanden}
+
+\chapter{Recognising entities}
+\label{ne_recognition_paper}
+\input{papers/ne_recognition/ne_recognition}
+
+\chapter{Resolving entities}
+\label{ne_resolution_paper}
+\input{papers/ne_resolution/ne_resolution}
+
+\chapter{Extracting propositions}
+\label{propositions_paper}
+\input{papers/propositions/propositions}
+
+\part{Assessing argumentation}
+
+\chapter{Argumentation macro structure identification}
+\label{macro_paper}
+\input{papers/macro_argumentation/macro_argumentation}
+
+\chapter{Argument mining something}
+\label{mining_paper}
+\input{papers/argument_mining/argument_mining}
+
+\printbibliography
+
+\appendix
+\input{chapters/appendix.tex}
+\backmatter
+\end{document}

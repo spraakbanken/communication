@@ -36,18 +36,19 @@ License for Jost*: SIL open font license
 
 The logotypes are created with Inkscape and provided in both SVG and PNG format. If you need something else, contact Staffan Melin (see Contact below).
 
-## Tools
+## Misc
 
-The following tools were used in the creation of the resources:
+### ROR
 
-* [Inkscape](https://inkscape.org/) (vector graphics)
-* [Scribus](https://scribus.net) (page layout)
-* [GIMP](https://www.gimp.org/) (image editing)
-* [Krita](https://krita.org/en/) (digital painting)
-* LaTeX
+ROR id:s for Språkbanken and departments:
 
-All content is created using free open source tools.
+* Språkbanken: https://ror.org/05qhvy459 
+* Språkbanken Sam: https://ror.org/01mqjeb88
+* Språkbanken Tal: https://ror.org/05kbck686
+* Språkbanken Text: https://ror.org/03xfh2n14
 
 ## Contact
 
 This repository is primarily maintained by [Staffan Melin](mailto://staffan.melin@svenska.gu.se). Please contact him if you have any suggestions or questions.
+
+All content is created using free open source tools.

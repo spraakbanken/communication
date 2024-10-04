@@ -1,0 +1,471 @@
+\documentclass{sbposter}
+\usepackage{graphicx}
+\usepackage[normalem]{ulem}
+\usepackage{booktabs} % tables
+\usepackage{caption}
+
+
+% Debug
+% \font\nullfont=cmr10
+
+% tikzposter title information
+% For long title:
+\title{\parbox{0.6\linewidth}{Universal Dependencies Meets \\Second Language Acquisition: \\the Case of Swedish}}
+% For short title:
+%\title{Title of your paper}
+\author{Arianna Masciolini}
+\institute{Språkbanken Text, University of Gothenburg, Sweden}
+
+\begin{document}
+\maketitle
+
+% Two column format
+\begin{columns}
+\column{0.5}
+
+\block{Why use UD for L2 corpora?}{
+    \vskip 5pt
+    \begin{itemize}
+        \item existing parsers allow for \textbf{faster, semi-automatic annotation}
+        \item rich morphosyntactic UD annotation supports the \textbf{study of L2 \\grammatical patterns}
+        \item UD provides a uniform annotation layer that enables \textbf{cross-lingual \\comparisons}:
+        \begin{itemize}
+            \item between a learner's L1 and L2
+            \item between different L2s
+            \item between standard and learner language
+        \end{itemize}
+    \end{itemize}
+    \vskip 15pt  
+}
+
+\block{L1-L2 Treebanks}{
+    \vskip 20pt
+    \textbf{Parallel treebanks} where \textbf{learner sentences} are \textbf{paired with \\ \textit{correction hypotheses}}.
+    
+    \bigskip\bigskipamount
+    L1-L2 treebanks can be an even better basis for:
+    \begin{itemize}
+        \item \textbf{grammatical error retrieval and analysis}
+        \item automatic \textbf{feedback comment generation}
+    \end{itemize}
+    \vskip 15pt  
+}
+
+\block{UD Treebanks of Second Language}{
+    \vskip 20pt
+    \begin{minipage}{\linewidth}
+        \centering
+        \resizebox{0.75\columnwidth}{!}{
+            \begin{tabular}{rlccc}
+                \textbf{language}         & \textbf{name}           & \textbf{sentences}                     & \textbf{status}               & \textbf{parallel} \\
+                \midrule
+                Chinese                   & CFL                     & 451                                    & released                      & no           \\
+                English                   & ESL                     & 5124                                   & retired*                      & \textbf{yes} \\
+                English                   & ESLSpok                 & 2320                                   & released                      & no           \\
+                Italian                   & Valico                  & 398                                    & released                      & \textbf{yes} \\
+                Korean                    & KSL                     & 7530                                   & released*                     & no           \\
+                Russian                   & ?                       & 500                                    & in progress                   & \textbf{yes} \\
+                \color{sborange}{Swedish} & \color{sborange}{SweLL} & \color{sborange}{\textasciitilde 5000} & \color{sborange}{in progress} & \textbf{\color{sborange}{yes}}              
+                \end{tabular}
+        }
+    \end{minipage}
+    \vskip 38pt  
+    \small{* available for download but not part of the latest UD release\newline}
+    \vskip 15pt  
+    }
+
+\column{0.5}
+
+\block{Overall Project Goals}{
+    %This project focuses on the latter case. More specifically, its first objective is to use L1-L2 treebanks, a type of parallel UD corpus where learner productions are contrasted with corrections, for grammatical error retrieval and analysis. Moreover, the intention is to experiment with dependency parsing of L2 material and use the resulting models to investigate whether error patterns extracted from automatic analyses can be used as a basis for feedback comment generation.
+    \begin{itemize}
+        \item improving \textbf{UD guidelines for L2} (Swedish) \textbf{treebanks}
+        \item \color{sborange}creating an \textbf{L1-L2 Swedish treebank}\color{black}
+        \item training \textbf{parsing models for L2 material}
+        \item developing \textbf{tools for parallel (L1-L2) treebanks}
+    \end{itemize}
+}
+
+\block{SweLL-UD: a Treebank of L2 Swedish}{
+    \innerblock{Source Corpus}{
+        \textbf{SweLL-gold}, aka the Swedish Learner Language corpus*:
+        \begin{itemize}
+            \item \textbf{genre}: essays (miscellaneous topics)
+            \item \textbf{learners}: adult L2 Swedish students with various language \\backgrounds and proficiency levels
+            \item \textbf{annotation}: manual correction, error tagging, pseudonymization \\and normalization (minimal edits)
+            \item \textbf{size}: 502 essays ($\to$ 5000+ parallel sentences)
+            \item \textbf{license}: CLARIN-ID -PRIV \underline{-NORED} -BY \\(but the data can be redistributed as long as some metadata is \\removed and full essays cannot be reconstructed)
+        \end{itemize}
+    }
+    \small{* part of the Manually Annotated Corpora CLARIN Resource Family\newline}
+    \vskip 5pt
+    \large
+    \innerblock{Project Status and Plan}{
+    \vskip 10pt
+        \begin{enumerate}
+            \item \textbf{preprocessing}:
+            \begin{itemize}
+                \item sentence pair extraction ($\checkmark$)
+                \item automatic pre-annotation ($\checkmark$)
+            \end{itemize}
+        \item \textbf{manual validation} of a 500-sentence test set $\parallel$ \textbf{guidelines \\development} (ongoing)
+        \item \textbf{test set} release (planned in 2025) - 2 versions: 
+        \begin{itemize}
+            \item sentence-shuffled version at \color{gublue}\url{universaldependencies.org}\color{black}
+            \item full-essay version with all metadata released as the source corpus 
+        \end{itemize}
+        \item gradual annotation and release of a \textbf{development and training set}
+        \end{enumerate}
+    }
+}
+
+\end{columns}
+
+\block{Example}{
+    \innerblock{Metadata}{
+        \vskip 10pt
+        \textbf{proficiency level}: beginner; \textbf{L1}: Tagalog; \textbf{best writing language}: English...}
+    \vskip 25pt
+    \innerblock{Original Sentence}{
+    \centering \normalsize (errors highlighted in bold, annotations that deviate from current UD guidelines marked with *)
+    \setlength{\unitlength}{0.575mm}
+    \small
+    \begin{picture}(1505.0,170.0)
+        \thicklines
+        \put(0.0,0.0){\textit{Det}}
+        \put(5.0,-20.0){It}
+        \put(46.0,0.0){\textit{var}}
+        \put(44.0,-20.0){was}
+        \put(83.0,0.0){\textit{svårt}}
+        \put(83.0,-20.0){hard}
+        \put(138.0,0.0){\textit{för}}
+        \put(138.0,-20.0){for}
+        \put(175.0,0.0){\textit{mig}}
+        \put(176.0,-20.0){me}
+        \put(221.0,0.0){\textbf{\textit{att}}}
+        \put(223.0,-20.0){at}
+        \put(267.0,0.0){\textit{först}}
+        \put(269.0,-20.0){first}
+        \put(322.0,0.0){\textbf{\textit{eftersom}}}
+        \put(317.0,-20.0){because of}
+        \put(404.0,0.0){\textbf{\textit{nya}}}
+        \put(402.0,-20.0){new}
+        \put(441.0,0.0){\textbf{\textit{kultur}}}
+        \put(438.0,-20.0){culture}
+        \put(505.0,0.0){\textit{och}}
+        \put(505.0,-20.0){and}
+        \put(560.0,0.0){\textbf{\textit{språk}}}
+        \put(550.0,-20.0){language}
+        \put(615.0,0.0){\textit{och}}
+        \put(614.0,-20.0){and}
+        \put(670.0,0.0){\textbf{\textit{olika}}}
+        \put(660.0,-20.0){different}
+        \put(725.0,0.0){\textbf{\textit{folk}}}
+        \put(718.0,-20.0){people}
+        \put(771.0,0.0){\textbf{\textit{att}}}
+        \put(773.0,-20.0){to}
+        \put(817.0,0.0){\textbf{\textit{traffa}}}
+        \put(822.0,-20.0){mit}
+        \put(881.0,0.0){\textit{men}}
+        \put(882.0,-20.0){but}
+        \put(936.0,0.0){\textit{varje}}
+        \put(933.0,-20.0){every}
+        \put(991.0,0.0){\textit{dag}}
+        \put(991.0,-20.0){day}
+        \put(1037.0,0.0){\textbf{\textit{det}}}
+        \put(1043.0,-20.0){it}
+        \put(1083.0,0.0){\textbf{\textit{kommer}}}
+        \put(1087.0,-20.0){comes}
+        \put(1154.0,0.0){\textit{lättare}}
+        \put(1156.0,-20.0){easier}
+        \put(1220.0,0.0){\textit{.}}
+        \put(1220.0,-20.0){.}
+        \put(0.0,15.0){{\tiny PRON}}
+        \put(46.0,15.0){{\tiny AUX}}
+        \put(83.0,15.0){{\tiny ADJ}}
+        \put(138.0,15.0){{\tiny ADP}}
+        \put(175.0,15.0){{\tiny PRON}}
+        \put(221.0,15.0){{\tiny PART}}
+        \put(267.0,15.0){{\tiny ADV}}
+        \put(322.0,15.0){{\tiny SCONJ**}}
+        \put(404.0,15.0){{\tiny ADJ}}
+        \put(441.0,15.0){{\tiny NOUN}}
+        \put(505.0,15.0){{\tiny CCONJ}}
+        \put(560.0,15.0){{\tiny NOUN}}
+        \put(615.0,15.0){{\tiny CCONJ}}
+        \put(670.0,15.0){{\tiny ADJ}}
+        \put(725.0,15.0){{\tiny NOUN}}
+        \put(771.0,15.0){{\tiny PART}}
+        \put(817.0,15.0){{\tiny VERB}}
+        \put(881.0,15.0){{\tiny CCONJ}}
+        \put(936.0,15.0){{\tiny DET}}
+        \put(991.0,15.0){{\tiny NOUN}}
+        \put(1037.0,15.0){{\tiny PRON}}
+        \put(1083.0,15.0){{\tiny VERB}}
+        \put(1147.0,15.0){{\tiny ADJ}}
+        \put(1220.0,15.0){{\tiny PUNCT}}
+        \put(51.5,30.0){\oval(79.3855421686747,66.66666666666667)[t]}
+        \put(11.807228915662648,35.0){\vector(0,-1){5.0}}
+        \put(36.5,66.33333333333334){{\tiny expl}}
+        \put(74.5,30.0){\oval(28.89189189189189,33.333333333333336)[t]}
+        \put(60.054054054054056,35.0){\vector(0,-1){5.0}}
+        \put(59.5,49.66666666666667){{\tiny cop}}
+        \put(166.5,30.0){\oval(28.89189189189189,33.333333333333336)[t]}
+        \put(152.05405405405406,35.0){\vector(0,-1){5.0}}
+        \put(151.5,49.66666666666667){{\tiny case}}
+        \put(149.0,30.0){\oval(88.73913043478261,66.66666666666667)[t]}
+        \put(193.3695652173913,35.0){\vector(0,-1){5.0}}
+        \put(134.0,66.33333333333334){{\tiny obl}}
+        \put(254.0,30.0){\oval(39.47826086956522,33.333333333333336)[t]}
+        \put(234.26086956521738,35.0){\vector(0,-1){5.0}}
+        \put(239.0,49.66666666666667){{\tiny case*}}
+        \put(195.0,30.0){\oval(182.3695652173913,100.0)[t]}
+        \put(286.1847826086956,35.0){\vector(0,-1){5.0}}
+        \put(180.0,83.0){{\tiny obl*}}
+        \put(391.5,30.0){\oval(116.47899159663865,66.66666666666667)[t]}
+        \put(333.26050420168065,35.0){\vector(0,-1){5.0}}
+        \put(376.5,66.33333333333334){{\tiny case**}}
+        \put(432.5,30.0){\oval(28.89189189189189,33.333333333333336)[t]}
+        \put(418.05405405405406,35.0){\vector(0,-1){5.0}}
+        \put(417.5,49.66666666666667){{\tiny amod}}
+        \put(282.0,30.0){\oval(357.16201117318434,133.33333333333334)[t]}
+        \put(460.58100558659214,35.0){\vector(0,-1){5.0}}
+        \put(267.0,99.66666666666667){{\tiny obl}}
+        \put(542.5,30.0){\oval(49.54545454545455,33.333333333333336)[t]}
+        \put(517.7272727272727,35.0){\vector(0,-1){5.0}}
+        \put(527.5,49.66666666666667){{\tiny cc}}
+        \put(520.5,30.0){\oval(116.47899159663865,66.66666666666667)[t]}
+        \put(578.7394957983194,35.0){\vector(0,-1){5.0}}
+        \put(505.5,66.33333333333334){{\tiny conj}}
+        \put(680.0,30.0){\oval(107.27272727272727,66.66666666666667)[t]}
+        \put(626.3636363636364,35.0){\vector(0,-1){5.0}}
+        \put(665.0,66.33333333333334){{\tiny cc}}
+        \put(707.5,30.0){\oval(49.54545454545455,33.333333333333336)[t]}
+        \put(682.7272727272727,35.0){\vector(0,-1){5.0}}
+        \put(692.5,49.66666666666667){{\tiny amod}}
+        \put(603.0,30.0){\oval(282.943661971831,100.0)[t]}
+        \put(744.4718309859155,35.0){\vector(0,-1){5.0}}
+        \put(588.0,83.0){{\tiny conj}}
+        \put(804.0,30.0){\oval(39.47826086956522,33.333333333333336)[t]}
+        \put(784.2608695652174,35.0){\vector(0,-1){5.0}}
+        \put(789.0,49.66666666666667){{\tiny mark}}
+        \put(791.0,30.0){\oval(88.73913043478261,66.66666666666667)[t]}
+        \put(835.3695652173913,35.0){\vector(0,-1){5.0}}
+        \put(776.0,66.33333333333334){{\tiny acl}}
+        \put(992.0,30.0){\oval(200.5148514851485,100.0)[t]}
+        \put(891.7425742574258,35.0){\vector(0,-1){5.0}}
+        \put(977.0,83.0){{\tiny cc}}
+        \put(973.5,30.0){\oval(49.54545454545455,33.333333333333336)[t]}
+        \put(948.7272727272727,35.0){\vector(0,-1){5.0}}
+        \put(958.5,49.66666666666667){{\tiny det}}
+        \put(1047.0,30.0){\oval(88.73913043478261,66.66666666666667)[t]}
+        \put(1002.6304347826087,35.0){\vector(0,-1){5.0}}
+        \put(1032.0,66.33333333333334){{\tiny obl}}
+        \put(1070.0,30.0){\oval(39.47826086956522,33.333333333333336)[t]}
+        \put(1050.2608695652175,35.0){\vector(0,-1){5.0}}
+        \put(1055.0,49.66666666666667){{\tiny nsubj}}
+        \put(603.0,30.0){\oval(999.7,166.66666666666666)[t]}
+        \put(1102.85,35.0){\vector(0,-1){5.0}}
+        \put(588.0,116.33333333333333){{\tiny conj}}
+        \put(1135.0,30.0){\oval(59.3125,33.333333333333336)[t]}
+        \put(1164.65625,35.0){\vector(0,-1){5.0}}
+        \put(1120.0,49.66666666666667){{\tiny xcomp}}
+        \put(671.5,30.0){\oval(1136.736147757256,200.0)[t]}
+        \put(1239.868073878628,35.0){\vector(0,-1){5.0}}
+        \put(656.5,133.0){{\tiny punct}}
+        \put(98.0,170.0){\vector(0,-1){140.0}}
+        \put(103.0,160.0){{\tiny root}}
+      \end{picture}}
+
+      \vskip 80pt
+
+      \large{
+        Existing Universal + Swedish-specific guidelines cover most ungrammatical fragments of this sentence, but:
+        \begin{itemize}
+            \item * : foreign construction, annotated borrowing from English guidelines
+            \item ** : mismatch between POS and DEPREL (intentional -- we annotate literally at the token level and follow distributional criteria at the syntactic level)
+        \end{itemize}}
+      \vskip 20pt
+
+      \large
+      \innerblock{Correction Hypothesis}{
+        \setlength{\unitlength}{0.468mm}
+        \small
+    \begin{picture}(1839.0,170.0)
+        \thicklines
+    \put(0.0,-2.0){\textit{Det}}
+    \put(46.0,-2.0){\textit{var}}
+    \put(83.0,-2.0){\textit{svårt}}
+    \put(138.0,-2.0){\textit{för}}
+    \put(175.0,-2.0){\textit{mig}}
+    \put(221.0,-2.0){\textit{först}}
+    \put(276.0,-2.0){\textit{på}}
+    \put(313.0,-2.0){\textit{grund}}
+    \put(368.0,-2.0){\textit{av}}
+    \put(405.0,-2.0){\textit{den}}
+    \put(442.0,-2.0){\textit{nya}}
+    \put(479.0,-2.0){\textit{kulturen}}
+    \put(561.0,-2.0){\textit{och}}
+    \put(616.0,-2.0){\textit{språket}}
+    \put(689.0,-2.0){\textit{och}}
+    \put(744.0,-2.0){\textit{att}}
+    \put(799.0,-2.0){\textit{jag}}
+    \put(845.0,-2.0){\textit{behövde}}
+    \put(921.0,-2.0){\textit{träffa}}
+    \put(982.0,-2.0){\textit{olika}}
+    \put(1037.0,-2.0){\textit{människor}}
+    \put(1128.0,-2.0){\textit{,}}
+    \put(1183.0,-2.0){\textit{men}}
+    \put(1238.0,-2.0){\textit{varje}}
+    \put(1293.0,-2.0){\textit{dag}}
+    \put(1339.0,-2.0){\textit{går}}
+    \put(1385.0,-2.0){\textit{det}}
+    \put(1431.0,-2.0){\textit{lättare}}
+    \put(1504.0,-2.0){\textit{.}}
+    \put(7.0,-28.0){It}
+    \put(46.0,-28.0){was}
+    \put(83.0,-28.0){hard}
+    \put(138.0,-28.0){for}
+    \put(175.0,-28.0){me}
+    \put(215.0,-28.0){at first}
+    \put(295.0,-28.0){because of}
+    \put(405.0,-28.0){the}
+    \put(440.0,-28.0){new}
+    \put(483.0,-28.0){culture}
+    \put(560.0,-28.0){and}
+    \put(610.0,-28.0){language}
+    \put(689.0,-28.0){and}
+    \put(739.0,-28.0){that}
+    \put(805.0,-28.0){I}
+    \put(852.0,-28.0){had to}
+    \put(920.0,-28.0){meet}
+    \put(975.0,-28.0){different}
+    \put(1050.0,-28.0){people}
+    \put(1128.0,-28.0){,}
+    \put(1183.0,-28.0){but}
+    \put(1236.0,-28.0){every}
+    \put(1293.0,-28.0){day}
+    \put(1352.0,-28.0){it goes}
+    \put(1432.0,-28.0){easier}
+    \put(1504.0,-28.0){.}
+    \put(0.0,15.0){{\tiny PRON}}
+    \put(46.0,15.0){{\tiny AUX}}
+    \put(83.0,15.0){{\tiny ADJ}}
+    \put(138.0,15.0){{\tiny ADP}}
+    \put(175.0,15.0){{\tiny PRON}}
+    \put(221.0,15.0){{\tiny ADV}}
+    \put(276.0,15.0){{\tiny ADP}}
+    \put(313.0,15.0){{\tiny NOUN}}
+    \put(368.0,15.0){{\tiny ADP}}
+    \put(405.0,15.0){{\tiny DET}}
+    \put(442.0,15.0){{\tiny ADJ}}
+    \put(479.0,15.0){{\tiny NOUN}}
+    \put(561.0,15.0){{\tiny CCONJ}}
+    \put(616.0,15.0){{\tiny NOUN}}
+    \put(689.0,15.0){{\tiny CCONJ}}
+    \put(744.0,15.0){{\tiny SCONJ}}
+    \put(799.0,15.0){{\tiny PRON}}
+    \put(845.0,15.0){{\tiny AUX}}
+    \put(918.0,15.0){{\tiny VERB}}
+    \put(982.0,15.0){{\tiny ADJ}}
+    \put(1037.0,15.0){{\tiny NOUN}}
+    \put(1128.0,15.0){{\tiny PUNCT}}
+    \put(1183.0,15.0){{\tiny CCONJ}}
+    \put(1238.0,15.0){{\tiny DET}}
+    \put(1293.0,15.0){{\tiny NOUN}}
+    \put(1339.0,15.0){{\tiny VERB}}
+    \put(1385.0,15.0){{\tiny PRON}}
+    \put(1431.0,15.0){{\tiny ADJ}}
+    \put(1504.0,15.0){{\tiny PUNCT}}
+    \put(51.5,30.0){\oval(79.3855421686747,66.66666666666667)[t]}
+    \put(11.807228915662648,35.0){\vector(0,-1){5.0}}
+    \put(36.5,66.33333333333334){{\tiny expl}}
+    \put(74.5,30.0){\oval(28.89189189189189,33.333333333333336)[t]}
+    \put(60.054054054054056,35.0){\vector(0,-1){5.0}}
+    \put(59.5,49.66666666666667){{\tiny cop}}
+    \put(166.5,30.0){\oval(28.89189189189189,33.333333333333336)[t]}
+    \put(152.05405405405406,35.0){\vector(0,-1){5.0}}
+    \put(151.5,49.66666666666667){{\tiny case}}
+    \put(149.0,30.0){\oval(88.73913043478261,66.66666666666667)[t]}
+    \put(193.3695652173913,35.0){\vector(0,-1){5.0}}
+    \put(134.0,66.33333333333334){{\tiny obl}}
+    \put(172.0,30.0){\oval(135.82608695652175,100.0)[t]}
+    \put(239.91304347826087,35.0){\vector(0,-1){5.0}}
+    \put(157.0,83.0){{\tiny advmod}}
+    \put(387.5,30.0){\oval(201.52216748768473,100.0)[t]}
+    \put(286.7389162561576,35.0){\vector(0,-1){5.0}}
+    \put(372.5,83.0){{\tiny case}}
+    \put(314.5,30.0){\oval(28.89189189189189,33.333333333333336)[t]}
+    \put(328.94594594594594,35.0){\vector(0,-1){5.0}}
+    \put(299.5,49.66666666666667){{\tiny fixed}}
+    \put(342.0,30.0){\oval(88.73913043478261,66.66666666666667)[t]}
+    \put(386.3695652173913,35.0){\vector(0,-1){5.0}}
+    \put(327.0,66.33333333333334){{\tiny fixed}}
+    \put(452.0,30.0){\oval(69.94594594594595,66.66666666666667)[t]}
+    \put(417.02702702702703,35.0){\vector(0,-1){5.0}}
+    \put(437.0,66.33333333333334){{\tiny det}}
+    \put(470.5,30.0){\oval(28.89189189189189,33.333333333333336)[t]}
+    \put(456.05405405405406,35.0){\vector(0,-1){5.0}}
+    \put(455.5,49.66666666666667){{\tiny amod}}
+    \put(301.0,30.0){\oval(395.24242424242425,133.33333333333334)[t]}
+    \put(498.6212121212121,35.0){\vector(0,-1){5.0}}
+    \put(286.0,99.66666666666667){{\tiny obl}}
+    \put(598.5,30.0){\oval(49.54545454545455,33.333333333333336)[t]}
+    \put(573.7272727272727,35.0){\vector(0,-1){5.0}}
+    \put(583.5,49.66666666666667){{\tiny cc}}
+    \put(567.5,30.0){\oval(134.8102189781022,66.66666666666667)[t]}
+    \put(634.9051094890511,35.0){\vector(0,-1){5.0}}
+    \put(552.5,66.33333333333334){{\tiny conj}}
+    \put(777.0,30.0){\oval(154.07692307692307,100.0)[t]}
+    \put(699.9615384615385,35.0){\vector(0,-1){5.0}}
+    \put(762.0,83.0){{\tiny cc}}
+    \put(804.5,30.0){\oval(98.02970297029702,66.66666666666667)[t]}
+    \put(755.4851485148515,35.0){\vector(0,-1){5.0}}
+    \put(789.5,66.33333333333334){{\tiny mark}}
+    \put(832.0,30.0){\oval(39.47826086956522,33.333333333333336)[t]}
+    \put(812.2608695652174,35.0){\vector(0,-1){5.0}}
+    \put(817.0,49.66666666666667){{\tiny nsubj}}
+    \put(682.0,30.0){\oval(365.1803278688525,133.33333333333334)[t]}
+    \put(864.5901639344263,35.0){\vector(0,-1){5.0}}
+    \put(667.0,99.66666666666667){{\tiny conj}}
+    \put(901.5,30.0){\oval(68.89041095890411,33.333333333333336)[t]}
+    \put(935.945205479452,35.0){\vector(0,-1){5.0}}
+    \put(886.5,49.66666666666667){{\tiny xcomp}}
+    \put(1019.5,30.0){\oval(49.54545454545455,33.333333333333336)[t]}
+    \put(994.7272727272727,35.0){\vector(0,-1){5.0}}
+    \put(1004.5,49.66666666666667){{\tiny amod}}
+    \put(997.5,30.0){\oval(116.47899159663865,66.66666666666667)[t]}
+    \put(1055.7394957983192,35.0){\vector(0,-1){5.0}}
+    \put(982.5,66.33333333333334){{\tiny obj}}
+    \put(1243.5,30.0){\oval(209.5781990521327,100.0)[t]}
+    \put(1138.7109004739336,35.0){\vector(0,-1){5.0}}
+    \put(1228.5,83.0){{\tiny punct}}
+    \put(1271.0,30.0){\oval(154.07692307692307,66.66666666666667)[t]}
+    \put(1193.9615384615386,35.0){\vector(0,-1){5.0}}
+    \put(1256.0,66.33333333333334){{\tiny cc}}
+    \put(1275.5,30.0){\oval(49.54545454545455,33.333333333333336)[t]}
+    \put(1250.7272727272727,35.0){\vector(0,-1){5.0}}
+    \put(1260.5,49.66666666666667){{\tiny det}}
+    \put(1326.0,30.0){\oval(39.47826086956522,33.333333333333336)[t]}
+    \put(1306.2608695652175,35.0){\vector(0,-1){5.0}}
+    \put(1311.0,49.66666666666667){{\tiny obl}}
+    \put(731.0,30.0){\oval(1255.7611464968154,166.66666666666666)[t]}
+    \put(1358.8805732484077,35.0){\vector(0,-1){5.0}}
+    \put(716.0,116.33333333333333){{\tiny conj}}
+    \put(1382.0,30.0){\oval(39.47826086956522,33.333333333333336)[t]}
+    \put(1401.7391304347825,35.0){\vector(0,-1){5.0}}
+    \put(1367.0,49.66666666666667){{\tiny nsubj}}
+    \put(1405.0,30.0){\oval(88.73913043478261,66.66666666666667)[t]}
+    \put(1449.3695652173913,35.0){\vector(0,-1){5.0}}
+    \put(1390.0,66.33333333333334){{\tiny xcomp}}
+    \put(813.5,30.0){\oval(1420.7888810696693,200.0)[t]}
+    \put(1523.8944405348348,35.0){\vector(0,-1){5.0}}
+    \put(798.5,133.0){{\tiny punct}}
+    \put(98.0,170.0){\vector(0,-1){140.0}}
+    \put(103.0,160.0){{\tiny root}}
+    \end{picture}}
+    \vskip 25pt
+}
+
+\end{document}
+

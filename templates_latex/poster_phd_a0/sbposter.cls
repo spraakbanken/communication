@@ -73,7 +73,7 @@ titletotopverticalspace=5cm, titletoblockverticalspace=2cm
 }{}
 
 \renewcommand\TP@maketitle{%
-    \begin{minipage}{0.8\titlewidth}
+    \begin{minipage}{0.85\titlewidth}
         \color{titlefgcolor}
         {\Huge \textbf{\@title} \par}
         \vspace*{2em}
@@ -120,10 +120,13 @@ titletotopverticalspace=5cm, titletoblockverticalspace=2cm
 ItalicFont = Jost-500-MediumItalic.otf,
 BoldItalicFont  = Jost-700-BoldItalic.otf]
 
+\usepackage{MnSymbol}%
+\renewcommand{\labelitemi}{$\blacksquare$}
+
 % Define our SB theme
 \definelayouttheme{sb}{
   \usecolorstyle[colorPalette=sb]{sb}
-  \usebackgroundstyle{sb}
+  \usebackgroundstyle{sbgray}
   \usetitlestyle{sb}
   \useblockstyle{sb}
 }

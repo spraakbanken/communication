@@ -32,7 +32,7 @@ Språkbanken Text is a research infrastructure for language data and a language 
 
 We develop, refine, and make freely available [language data](https://spraakbanken.gu.se/en/resources) in accordance with the [FAIR principles](https://www.go-fair.org/fair-principles/), with a special focus on the Swedish language throughout history.
 
-We develop freely available digital [research platforms](https://spraakbanken.gu.se/verktyg) ([Korp](https://spraakbanken.gu.se/korp), [Karp](https://spraakbanken.gu.se/karp), [Mink](https://spraakbanken.gu.se/mink), [Sparv](https://spraakbanken.gu.se/sparv) och [Strix](https://spraakbanken.gu.se/strix)), where we aim to support all types of research where language data is central.
+We develop freely available digital [research platforms](https://spraakbanken.gu.se/verktyg) ([Korp](https://spraakbanken.gu.se/korp), [Karp](https://spraakbanken.gu.se/karp), [Mink](https://spraakbanken.gu.se/mink), [Sparv](https://spraakbanken.gu.se/sparv) and [Strix](https://spraakbanken.gu.se/strix)), where we aim to support all types of research where language data is central.
 
 We conduct our own [research](https://spraakbanken.gu.se/en/research) in language technology, including language-based AI, and participate in projects in other disciplines. Our collaborations are both national and international and include memory and cultural heritage institutions, schools, and enterprises.
 

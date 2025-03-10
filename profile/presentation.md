@@ -44,8 +44,8 @@ Used on the start page of our site.
 
 ### Swedish
 
-Vi utvecklar, förädlar och tillgängliggör fria språkliga forskningsdata, med ett särskilt fokus på svenska språket genom tiderna. Vi utvecklar och tillgängliggör fria digitala forskningsplattformar, där vi strävar efter att stödja alla typer av forskning där språkliga data är centrala. Vi bedriver egen forskning i språkteknologi, inklusive språkbaserad AI, samt deltar i projekt inom andra discipliner.
+Vi utvecklar, förädlar och tillgängliggör fria språkliga forskningsdata och språkteknologiska analyser, med ett särskilt fokus på svenska språket genom tiderna. Vi utvecklar och tillgängliggör fria digitala forskningsplattformar, där vi strävar efter att stödja alla typer av forskning där språkliga data är centrala. Vi bedriver egen forskning i språkteknologi, inklusive språkbaserad AI, samt deltar i projekt inom andra discipliner.
 
 ### English
 
-We develop, refine, and make freely available language data, with a special focus on the Swedish language throughout history. We develop freely available digital research platforms, where we aim to support all types of research where language data is central. We conduct our own research in language technology, including language-based AI, and participate in projects in other disciplines.
+We develop, refine, and make freely available language data and language technology analyses, with a special focus on the Swedish language throughout history. We develop freely available digital research platforms, where we aim to support all types of research where language data is central. We conduct our own research in language technology, including language-based AI, and participate in projects in other disciplines.

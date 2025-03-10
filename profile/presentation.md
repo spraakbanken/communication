@@ -16,7 +16,7 @@ A research infrastructure for language data and a language technology research u
 
 Språkbanken Text är en forskningsinfrastruktur för språkliga data och en språkteknologisk forskningsenhet. Vi är en del av [Språkbanken](http://www.sprakbanken.se), en nationell infrastruktur till stöd för forskning baserad på språkliga data.
 
-Vi utvecklar, förädlar och tillgängliggör fria [språkliga forskningsdata](https://spraakbanken.gu.se/resurser) enligt [FAIR-principerna](https://www.go-fair.org/fair-principles/), med ett särskilt fokus på svenska språket genom tiderna.
+Vi utvecklar, förädlar och tillgängliggör fria [språkliga forskningsdata](https://spraakbanken.gu.se/resurser) och [språkteknologiska analyser](https://spraakbanken.gu.se/analyser) enligt [FAIR-principerna](https://www.go-fair.org/fair-principles/), med ett särskilt fokus på svenska språket genom tiderna.
 
 Vi utvecklar och tillgängliggör fria digitala [forskningsplattformar](https://spraakbanken.gu.se/verktyg) ([Korp](https://spraakbanken.gu.se/korp), [Karp](https://spraakbanken.gu.se/karp), [Mink](https://spraakbanken.gu.se/mink), [Sparv](https://spraakbanken.gu.se/sparv) och [Strix](https://spraakbanken.gu.se/strix)), där vi strävar efter att stödja alla typer av forskning där språkliga data är centrala.
 
@@ -30,7 +30,7 @@ Läs gärna vår lättilgängliga presentation [Språkbanken för nybörjare](ht
 
 Språkbanken Text is a research infrastructure for language data and a language technology research unit. We are part of [Språkbanken](http://www.sprakbanken.se), a national infrastructure supporting research based on language data.
 
-We develop, refine, and make freely available [language data](https://spraakbanken.gu.se/en/resources) in accordance with the [FAIR principles](https://www.go-fair.org/fair-principles/), with a special focus on the Swedish language throughout history.
+We develop, refine, and make freely available [language data](https://spraakbanken.gu.se/en/resources) and language [technology analyses](https://spraakbanken.gu.se/en/analyses) in accordance with the [FAIR principles](https://www.go-fair.org/fair-principles/), with a special focus on the Swedish language throughout history.
 
 We develop freely available digital [research platforms](https://spraakbanken.gu.se/verktyg) ([Korp](https://spraakbanken.gu.se/korp), [Karp](https://spraakbanken.gu.se/karp), [Mink](https://spraakbanken.gu.se/mink), [Sparv](https://spraakbanken.gu.se/sparv) and [Strix](https://spraakbanken.gu.se/strix)), where we aim to support all types of research where language data is central.
 

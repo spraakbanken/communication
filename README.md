@@ -6,7 +6,7 @@ Use these templates to make sure you follow the graphic identity of Språkbanken
 
 We provide templates both for office programs and LaTeX.
 
-Please contribute! If you have made a product for Språkbanken Text, or are missing something, don't hesitate to contact Staffan Melin (see Contact below).
+Please contribute! If you have made something for Språkbanken Text, or are missing something, don't hesitate to contact Staffan Melin (see Contact below).
 
 ## Introduction
 
@@ -56,7 +56,7 @@ The logotypes are created with Inkscape and provided in both SVG and PNG format.
 
 ### Products
 
-Finished products using the Språkbanken Text identity.
+Content moved to our Sharepoint.
 
 ### Profile
 

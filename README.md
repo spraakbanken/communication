@@ -1,26 +1,24 @@
 # Communication
 
-Here you will find templates, logotypes and the graphic identify for [Språkbanken Text](https://spraakbanken.gu.se).
+Here you will find templates, logotypes and the graphic identify for [Språkbanken](https://sprakbanken.se).
 
-Use these templates to make sure you follow the graphic identity of Språkbanken Text.
+Use these templates to make sure you follow the graphic identity of Språkbanken.
 
 We provide templates both for office programs and LaTeX.
 
-Please contribute! If you have made something for Språkbanken Text, or are missing something, don't hesitate to contact Staffan Melin (see Contact below).
+Please contribute! If you have made something for Språkbanken, or are missing something, don't hesitate to contact Staffan Melin (see Contact below).
 
 ## Introduction
 
 Useful main principles:
 
-* Signal that this is Språkbanken Text: 
+* Signal that this is Språkbanken: 
   * use the logo
   * use the orange color
   * use the Jost* font
-  * write "Språkbanken Text" not "SB" or "SBX"
-  * add our URL: spraakbanken.gu.se
+  * write "Språkbanken" not "SB"
+  * add our URL: spraabanken.se
 * Keep it simple - less is more
-
-In the work with our templates we have tried to mimic, or at least been inspired by, existing templates from the University of Gothenburg.
 
 ### Colors
 
@@ -29,16 +27,6 @@ Our main color is Orange. Our orange is defined as:
 * RGB: 240/88/26, hex: F0581A
 * CMYK: 0/63/89/6
 * PANTONE Orange 021 C
-
-The University of Gothenburgs uses its own blue color, defined as:
-
-* RGB: 0/75/137, hex: 004b89
-* CMYK: 100/75/15/0
-* PMS: 294 C, 2945 U
-* HTML: 004b89
-* NCS: 4550-R90B
-
-According to university policy, the use of decorative colors are allowed.
 
 ## Content
 
@@ -60,7 +48,7 @@ Content moved to our Sharepoint.
 
 ### Profile
 
-Graphic profile/identity document for Språkbanken Text.
+Graphic profile/identity document for Språkbanken.
 
 ### Symbols
 
@@ -68,11 +56,15 @@ Some simple symbols from our projects.
 
 ### Templates for LaTeX
 
+Only old ones for Språkbanken Text.
+
 LaTex templates:
 
 * Poster PhD A0
 
 ### Templates for Desktop applications
+
+Only old ones for Språkbanken Text.
 
 LibreOffice and Microsoft Office templates:
 
@@ -81,9 +73,22 @@ LibreOffice and Microsoft Office templates:
 
 Scribus templates:
 
+Only old ones for Språkbanken Text.
+
 * Poster PhD A0
 
-## Tools
+## Misc
+
+### ROR
+
+ROR id:s for Språkbanken and departments:
+
+* Språkbanken: https://ror.org/05qhvy459 
+* Språkbanken Sam: https://ror.org/01mqjeb88
+* Språkbanken Tal: https://ror.org/05kbck686
+* Språkbanken Text: https://ror.org/03xfh2n14
+
+### Tools
 
 The following tools were used in the creation of the profile and templates:
 
@@ -94,6 +99,16 @@ The following tools were used in the creation of the profile and templates:
 * LaTeX
 
 All content is created using free open source tools.
+
+### Old
+
+The University of Gothenburgs uses its own blue color, defined as:
+
+* RGB: 0/75/137, hex: 004b89
+* CMYK: 100/75/15/0
+* PMS: 294 C, 2945 U
+* HTML: 004b89
+* NCS: 4550-R90B
 
 ## Contact
 

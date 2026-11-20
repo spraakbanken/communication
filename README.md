@@ -1,6 +1,6 @@
 # Communication
 
-Here you will find templates, logotypes and the graphic identify for [Språkbanken](https://sprakbanken.se).
+Here you will find templates, logotypes and the graphic identity for [Språkbanken](https://sprakbanken.se).
 
 Use these templates to make sure you follow the graphic identity of Språkbanken.
 
